@@ -9,9 +9,9 @@ import fs from 'fs'
 import cheerio from 'cheerio'
 import request from "request";
 //基本路径
-// const basicUrl = 'http://aqdyba.com/lusi/'
-const basicUrl = 'http://aqdyba.com/lldm/'
-const homeUrl = 'http://aqdyba.com'
+const basicUrl = 'http://aqdybi.com/lusi/'
+// const basicUrl = 'http://aqdybi.com/lldm/'
+const homeUrl = 'http://aqdybi.com'
 let num = 1;
 /**
  * 获取详情保存
@@ -114,7 +114,7 @@ const start = function(url) {
                             }
                             let writeStream = fs.createWriteStream('./image/' + name, {autoClose:true});
                             request(imgUrl).pipe(writeStream).on('close', function(){
-                                console.log('end');
+                                console.log('imageEnd');
                             });
                         });
                     }catch(error){
@@ -133,8 +133,7 @@ const start = function(url) {
     });
 }
 if(num == 1){
-start(basicUrl);
-
+    start(basicUrl);
 }else{
     start('http://aqdyba.com/lusi/index' + num + '.html');
 }
