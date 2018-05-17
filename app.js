@@ -9,9 +9,9 @@ import fs from 'fs'
 import cheerio from 'cheerio'
 import request from "request";
 //基本路径
-const basicUrl = 'http://aqdybi.com/lusi/'
-// const basicUrl = 'http://aqdybi.com/lldm/'
-const homeUrl = 'http://aqdybi.com'
+const basicUrl = '狐狸/'
+// const basicUrl = '狐狸/'
+const homeUrl = '狐狸'
 let num = 1;
 /**
  * 获取详情保存
