@@ -135,5 +135,5 @@ const start = function(url) {
 if(num == 1){
     start(basicUrl);
 }else{
-    start('http://aqdyba.com/lusi/index' + num + '.html');
+    start('狐狸' + num + '.html');
 }
